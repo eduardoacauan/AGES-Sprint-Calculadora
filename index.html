@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <h1>Calculadora</h1>
+    <div class="calc">
+        <div>
+            <img id="cima" src="parteCima.png">
+        </div>
+        <p id="calc-display">0</p>
+        <div class="botoes">
+        <button onclick="clearcalc()" id="spec">AC</button>
+        <button onclick="negateValue()" id="spec">+ / -</button>
+        <button onclick="appendOp('%')" id="spec">%</button>
+        <button onclick="appendOp('/')" id="op">÷</button>
+        <button onclick="displayNum('7')" id="num">7</button>
+        <button onclick="displayNum('8')" id="num">8</button>
+        <button onclick="displayNum('9') "id="num">9</button>
+        <button onclick="appendOp('*')" id="op">x</button>
+        <button onclick="displayNum('4')"type="button" id="num">4</button>
+        <button onclick="displayNum('5')" id="num">5</button>
+        <button onclick="displayNum('6')" id="num">6</button>
+        <button onclick="appendOp('-')"   id="op">-</button>
+        <button onclick="displayNum('1')" id="num">1</button>
+        <button onclick="displayNum('2')" id="num">2</button>
+        <button onclick="displayNum('3')" id="num">3</button>
+        <button onclick="appendOp('+')" id="op">+</button>
+        <button onclick="displayNum('0')" id="zero">0</button>
+        <button onclick="appendOp('.')" id="num">,</button>
+        <button onclick="evaluateCalc()" id="op">=</button>
+    </div>
+    </div>
+
+    <footer class="page-footer">
+        <p>By Eduardo Spies Acauan</p>
+    </footer>
+</body>
+</html>
